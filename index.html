@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Comes First: GTA 6 or Mikoto Studio?</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0a0a;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .countdown-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .countdown-card {
+            background: #1a1a1a;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+            border: 1px solid #333;
+            transition: transform 0.3s ease;
+        }
+
+        .countdown-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .card-logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .countdown {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .time-unit {
+            background: #0a0a0a;
+            border-radius: 10px;
+            padding: 15px 10px;
+            text-align: center;
+            border: 1px solid #333;
+        }
+
+        .time-value {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .time-label {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            margin-top: 5px;
+            display: block;
+        }
+
+        .target-date {
+            text-align: center;
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            opacity: 0.8;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            .countdown { grid-template-columns: repeat(2, 1fr); }
+            .time-value { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>What Comes First?</h1>
+            <p class="subtitle">nah mikoto before gta 6</p>
+        </header>
+
+        <div class="countdown-container">
+            <div class="countdown-card">
+                <div class="card-title">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5cd1f6af-ed85-437b-ba2a-131693b7f3d8/dgj3kny-2ee3a0e9-ee94-4add-b61b-7d99f2858614.png/v1/fill/w_1280,h_1280,q_80,strp/gta_6_logo__4k__by_giga_bitten_dgj3kny-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiIvZi81Y2QxZjZhZi1lZDg1LTQzN2ItYmEyYS0xMzE2OTNiN2YzZDgvZGdqM2tueS0yZWUzYTBlOS1lZTk0LTRhZGQtYjYxYi03ZDk5ZjI4NTg2MTQucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.oeJMQorOHwI3QrVAfsr1sT5vUYpMUgWBITtI3XJM_Po" alt="GTA 6" class="card-logo">
+                    <span>GTA 6</span>
+                </div>
+                <div class="countdown" id="gta6-countdown">
+                    <div class="time-unit">
+                        <span class="time-value" id="gta6-days">-</span>
+                        <span class="time-label">Days</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="gta6-hours">-</span>
+                        <span class="time-label">Hours</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="gta6-minutes">-</span>
+                        <span class="time-label">Minutes</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="gta6-seconds">-</span>
+                        <span class="time-label">Seconds</span>
+                    </div>
+                </div>
+                <div class="target-date">Release: November 19, 2026</div>
+            </div>
+
+            <div class="countdown-card">
+                <div class="card-title">
+                    <img src="https://mikoto.studio/icon.png" alt="Mikoto Studio" class="card-logo">
+                    <span>Mikoto Studio</span>
+                </div>
+                <div class="countdown" id="mikoto-countdown">
+                    <div class="time-unit">
+                        <span class="time-value" id="mikoto-days">-</span>
+                        <span class="time-label">Days</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="mikoto-hours">-</span>
+                        <span class="time-label">Hours</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="mikoto-minutes">-</span>
+                        <span class="time-label">Minutes</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="mikoto-seconds">-</span>
+                        <span class="time-label">Seconds</span>
+                    </div>
+                </div>
+                <div class="target-date">Target: Early 2026 (TBA)</div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Made by miku</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">
+                <a href="https://github.com/cfm-miku-en/gta6-vs-mikoto" target="_blank">View on GitHub</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        const GTA6_RELEASE = new Date('2026-11-19T00:00:00').getTime();
+        const MIKOTO_RELEASE = new Date('2026-11-19T00:00:00').getTime(); 
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const gta6Distance = GTA6_RELEASE - now;
+            const mikotoDistance = MIKOTO_RELEASE - now;
+
+            function calculateTime(distance) {
+                return {
+                    days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+                    hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+                    minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+                    seconds: Math.floor((distance % (1000 * 60)) / 1000)
+                };
+            }
+
+            const gta6Time = calculateTime(gta6Distance);
+            const mikotoTime = calculateTime(mikotoDistance);
+
+            document.getElementById('gta6-days').textContent = gta6Time.days;
+            document.getElementById('gta6-hours').textContent = gta6Time.hours;
+            document.getElementById('gta6-minutes').textContent = gta6Time.minutes;
+            document.getElementById('gta6-seconds').textContent = gta6Time.seconds;
+
+            document.getElementById('mikoto-days').textContent = mikotoTime.days;
+            document.getElementById('mikoto-hours').textContent = mikotoTime.hours;
+            document.getElementById('mikoto-minutes').textContent = mikotoTime.minutes;
+            document.getElementById('mikoto-seconds').textContent = mikotoTime.seconds;
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
